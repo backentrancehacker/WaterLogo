@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+	<!-- SEO -->
+	<meta name="keywords" content="AdCharity, logo" />
+	<meta name="author" content="AdCharity" />
+	<meta property="og:author" content="AdCharity" />
+    <title>AdCharity Logo</title>
+	<meta property="og:title" content="AdCharity Logo" />
+	<meta property="og:description" content="Just a rippling logo."/>
+    <meta name="description" content="Just a rippling logo."/>
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+	<!-- Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="HandheldFriendly" content="true" />
+
+	<!-- Prevent Cache -->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/style.css"/>
+
+</head>
+<body>
+	<div id="circle">
+		<img src="/assets/logo.png"/>
+	</div>
+	<svg>
+		<filter id="turbulence" x="0" y="0" width="100%" height="100%">
+			<feTurbulence id="filter" numOctaves="3" seed="2" baseFrequency="0.02 0.05"></feTurbulence>
+			<feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+			<animate xlink:href="#filter" attributeName="baseFrequency" dur="60s" keyTimes="0; 0.5; 1" values="0.02 0.05; 0.05 0.1; 0.02 0.05" repeatCount="indefinite"></animate>
+		</filter>
+	</svg>
+	<div class="credits">
+		<p>Work by <a href="https://repl.it/@AdCharity">@AdCharity</a></p>
+	</div>
+</body>
+</html>
